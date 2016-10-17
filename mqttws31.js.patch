@@ -1,0 +1,27 @@
+diff --git a/mqttws31.js b/mqttws31.js
+index 87b7da5..a8b7d3e 100644
+--- a/mqttws31.js
++++ b/mqttws31.js
+@@ -1,3 +1,22 @@
++global.WebSocket = require('ws')
++
++global.localStorage = {
++  store: {},
++  getItem: function (key) {
++    return this.store[key]
++  },
++  setItem: function (key, value) {
++    this.store[key] = value
++  },
++  removeItem: function (key) {
++    delete this.store[key]
++  }
++}
++global.window = global
++
++const Paho = {}
++module.exports = Paho
++
+ /*******************************************************************************
+  * Copyright (c) 2013 IBM Corp.
+  *

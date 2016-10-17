@@ -1,0 +1,24 @@
+{
+  "name": "paho-node",
+  "version": "1.0.0",
+  "description": "Eclipse Paho JavaScript Client for Node.js",
+  "author": "Peter Morjan <pmorjan@gmail.com>",
+  "scripts": {
+    "start": "node example.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pmorjan/paho-node.git"
+  },
+  "keywords": [
+    "mqtt",
+    "paho"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^1.1.1"
+  },
+  "engines": {
+    "node": ">=4"
+  }
+}
